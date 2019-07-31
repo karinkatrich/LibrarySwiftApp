@@ -33,6 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let base64EncodedCredential = userPasswordData!.base64EncodedString()
         let authString = "Basic \(base64EncodedCredential)"
         config.httpAdditionalHeaders = ["Authorization" : authString]
+
         let session = URLSession(configuration: config)
 
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
@@ -43,12 +44,8 @@ class ViewController: UIViewController, UITableViewDataSource {
             print("downloaded")
             do
             {
-                let decoder = JSONDecoder()
-                //                let downloadedBooks = try decoder.decode(Books.self, from: data)
                 self.books = try! self.decoder.decode([Book].self, from: data)
                 print(self.books)
-
-                //                self.books = downloadedBooks.books
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }

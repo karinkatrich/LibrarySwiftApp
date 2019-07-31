@@ -14,6 +14,9 @@
 		922D8CC422EF15F000D03E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922D8CC222EF15F000D03E90 /* LaunchScreen.storyboard */; };
 		922D8CCC22EF161300D03E90 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D8CCB22EF161300D03E90 /* BookCell.swift */; };
 		922D8CD122EF191E00D03E90 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D8CD022EF191E00D03E90 /* Book.swift */; };
+		922D8CD722F07B8A00D03E90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D8CD622F07B8A00D03E90 /* HomeViewController.swift */; };
+		922D8CDA22F0854B00D03E90 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D8CD922F0854B00D03E90 /* SignInViewController.swift */; };
+		922D8CDE22F0865600D03E90 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D8CDD22F0865600D03E90 /* RegisterUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		922D8CC522EF15F000D03E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		922D8CCB22EF161300D03E90 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		922D8CD022EF191E00D03E90 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Book.swift; path = ../../../../../../System/Volumes/Data/Users/karyna/Documents/LibrarySwiftApp/LibrarySwiftApp/Model/Book.swift; sourceTree = "<group>"; };
+		922D8CD622F07B8A00D03E90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		922D8CD922F0854B00D03E90 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		922D8CDD22F0865600D03E90 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,10 @@
 		922D8CB822EF15EF00D03E90 /* LibrarySwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				922D8CD822F0853500D03E90 /* Controller */,
 				922D8CCF22EF18F100D03E90 /* Cell */,
 				922D8CCE22EF18E800D03E90 /* Model */,
 				922D8CB922EF15EF00D03E90 /* AppDelegate.swift */,
-				922D8CBB22EF15EF00D03E90 /* ViewController.swift */,
 				922D8CBD22EF15EF00D03E90 /* Main.storyboard */,
 				922D8CC022EF15F000D03E90 /* Assets.xcassets */,
 				922D8CC222EF15F000D03E90 /* LaunchScreen.storyboard */,
@@ -84,6 +90,17 @@
 				922D8CCB22EF161300D03E90 /* BookCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		922D8CD822F0853500D03E90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				922D8CBB22EF15EF00D03E90 /* ViewController.swift */,
+				922D8CD922F0854B00D03E90 /* SignInViewController.swift */,
+				922D8CDD22F0865600D03E90 /* RegisterUserViewController.swift */,
+				922D8CD622F07B8A00D03E90 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				922D8CD122EF191E00D03E90 /* Book.swift in Sources */,
+				922D8CDE22F0865600D03E90 /* RegisterUserViewController.swift in Sources */,
 				922D8CCC22EF161300D03E90 /* BookCell.swift in Sources */,
 				922D8CBC22EF15EF00D03E90 /* ViewController.swift in Sources */,
+				922D8CDA22F0854B00D03E90 /* SignInViewController.swift in Sources */,
+				922D8CD722F07B8A00D03E90 /* HomeViewController.swift in Sources */,
 				922D8CBA22EF15EF00D03E90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
