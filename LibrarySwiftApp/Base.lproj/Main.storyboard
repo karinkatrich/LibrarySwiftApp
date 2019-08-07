@@ -84,7 +84,7 @@
                     </view>
                     <connections>
                         <outlet property="userNameTextField" destination="1Ii-D2-pNQ" id="qEg-oO-FyN"/>
-                        <outlet property="userProfileTextField" destination="s2B-ld-TX0" id="ya2-jp-hWD"/>
+                        <outlet property="userPasswordTextField" destination="s2B-ld-TX0" id="ya2-jp-hWD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VM-Qa-LHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
